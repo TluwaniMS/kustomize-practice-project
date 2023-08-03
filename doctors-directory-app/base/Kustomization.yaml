@@ -7,5 +7,4 @@ resources:
 - doctors-directory-namespace.yaml
 - doctors-directory-server-configmap.yaml
 - doctors-directory-server-deployment.yaml
-- Kustomization.yaml
 - mongodb-deployment.yaml
