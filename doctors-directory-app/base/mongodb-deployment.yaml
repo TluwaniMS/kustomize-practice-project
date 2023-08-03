@@ -12,6 +12,7 @@ spec:
       app: mongodb
   template:
     metadata:
+      name: mongodb-pod
       namespace: doctors-directory
       labels:
         app: mongodb

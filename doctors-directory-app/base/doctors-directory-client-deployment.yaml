@@ -12,6 +12,7 @@ spec:
       app: doctors-directory-client
   template:
     metadata:
+      name: doctors-directory-client-pod
       namespace: doctors-directory
       labels:
         app: doctors-directory-client
