@@ -6,7 +6,7 @@ Kustomize serves as a configuration management tool, utilizing layering to maint
 
 # Kustomize folder structure:
 
-![Kustomize Folder Structure]()
+![Kustomize Folder Structure](https://github.com/TluwaniMS/kustomize-practice-project/blob/master/supporting-images/Screenshot%202023-08-04%20at%2012.13.28.png)
 
 ### base:
 
