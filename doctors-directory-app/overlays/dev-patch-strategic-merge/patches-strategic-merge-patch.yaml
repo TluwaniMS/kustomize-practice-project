@@ -1,0 +1,10 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: doctors-directory-server-deployment
+  namespace: doctors-directory
+  labels:
+    app: doctors-directory-server
+    addedThrough: patches-strategic-merge-path
+spec:
+  replicas: 1

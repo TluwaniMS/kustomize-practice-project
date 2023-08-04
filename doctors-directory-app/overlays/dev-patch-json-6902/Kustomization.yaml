@@ -22,7 +22,7 @@ patchesJson6902:
   patch: |-
     - op: add
       path: /metadata/labels/addedBy
-      value: patches-json-6902-patch
+      value: patches-json-6902-inline
 - target:
     kind: Deployment
     name: doctors-directory-client-deployment
