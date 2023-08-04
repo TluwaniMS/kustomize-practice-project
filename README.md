@@ -20,3 +20,23 @@ An "overlay" is a type of kustomization that relies on another kustomization. Th
 # Kustomization file:
 
 The kustomization file represents a YAML specification for a Kubernetes Resource Model (KRM) object referred to as a 'Kustomization.' It outlines the process of generating or modifying other KRM objects.
+
+
+# Practice commands
+
+###### building from `overlays/dev-patches`:
+
+```
+kustomize build overlays/dev-patches
+```
+
+###### building from `overlays/dev-patch-strategic-merge`
+
+```
+kustomize build overlays/dev-patch-strategic-merge
+```
+###### building from `overlays/dev-patch-json-6902`
+
+```
+kustomize build overlays/dev-patch-json-6902
+```
