@@ -6,6 +6,8 @@ Kustomize serves as a configuration management tool, utilizing layering to maint
 
 # Kustomize folder structure:
 
+![Kustomize Folder Structure]()
+
 ### base:
 
 A base, in the context of kustomization, serves as a reference point for other kustomizations. This means that any kustomization, including overlays, can use another kustomization as its base. Importantly, a base remains unaware of the overlays that make use of it.
