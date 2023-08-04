@@ -10,3 +10,20 @@ nameSuffix: -patch-json-6902
 
 commonLabels:
   layer: patch-json-6902
+
+replicas:
+- name: doctors-directory-client-deployment
+  count: 3
+
+patchesJson6902:
+- target:
+    kind: Deployment
+    name: doctors-directory-client-deployment
+  patch: |-
+    - op: add
+      path: /metadata/labels/addedBy
+      value: patches-json-6902-patch
+- target:
+    kind: Deployment
+    name: doctors-directory-client-deployment
+  path: patches-json-6902-patch.yaml

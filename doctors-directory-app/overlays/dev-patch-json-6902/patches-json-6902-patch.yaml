@@ -1,0 +1,3 @@
+- op: add
+  path: /metadata/labels/addedThrough
+  value: patches-json-6902-path
