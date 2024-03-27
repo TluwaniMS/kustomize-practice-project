@@ -2,7 +2,7 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 
 resources:
-- ../../base
+  - ../../base
 
 namePrefix: dev-
 
@@ -12,17 +12,17 @@ commonLabels:
   layer: patch-strategic-merge
 
 patchesStrategicMerge:
-- patches-strategic-merge-patch.yaml
-- |-
-  apiVersion: apps/v1
-  kind: Deployment
-  metadata:
-    name: doctors-directory-client-deployment
-    namespace: doctors-directory
-    labels:
-      addedThrough: patches-strategic-merge-inline
-  spec:
-    replicas: 5
-    selector:
-      matchLabels:
-        app: doctors-directory-client
+  - patches-strategic-merge-patch.yaml
+  - |-
+    apiVersion: apps/v1
+    kind: Deployment
+    metadata:
+      name: doctors-directory-client-deployment
+      namespace: doctors-directory
+      labels:
+        addedThrough: patches-strategic-merge-inline
+    spec:
+      replicas: 5
+      selector:
+        matchLabels:
+          app: doctors-directory-client
