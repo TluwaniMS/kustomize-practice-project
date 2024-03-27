@@ -1,12 +1,16 @@
 # kustomize practice project
 
+# Main Objective:
+
+This repository was created with the intention of giving one a quick guide on how to use `Kustomize`.
+
 # What is Kustomize?
 
 Kustomize serves as a configuration management tool, utilizing layering to maintain the fundamental settings of your applications and components. This is achieved by applying declarative yaml artifacts (referred to as patches) that selectively modify default settings without directly altering the original files.
 
 # Kustomize folder structure:
 
-![Kustomize Folder Structure]()
+![Kustomize Folder Structure](https://github.com/TluwaniMS/kustomize-practice-project/blob/master/supporting-images/Screenshot%202023-08-04%20at%2012.13.28.png)
 
 ### base:
 
