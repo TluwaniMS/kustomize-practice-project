@@ -12,7 +12,7 @@ commonLabels:
   layer: patch-strategic-merge
 
 patchesStrategicMerge:
-  - patches-strategic-merge-patch.yaml
+  - ./patches/patches-strategic-merge-patch.yaml
   - |-
     apiVersion: apps/v1
     kind: Deployment

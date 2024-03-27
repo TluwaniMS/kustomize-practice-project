@@ -12,7 +12,7 @@ commonLabels:
   layer: patches
 
 patches:
-  - path: patches-patch.yaml
+  - path: ./patches/patches-patch.yaml
     target:
       kind: Deployment
       name: doctors-directory-server-deployment

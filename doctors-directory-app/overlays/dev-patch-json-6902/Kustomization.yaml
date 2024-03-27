@@ -26,4 +26,4 @@ patchesJson6902:
   - target:
       kind: Deployment
       name: doctors-directory-client-deployment
-    path: patches-json-6902-patch.yaml
+    path: ./patches/patches-json-6902-patch.yaml
