@@ -13,7 +13,7 @@ spec:
     path: doctors-directory-app/overlays/dev-patch-json-6902
   destination:
     server: https://kubernetes.default.svc
-    namespace: ''
+    namespace: dev-doctors-directory-patch-json-6902
   syncPolicy:
     automated:
       prune: true

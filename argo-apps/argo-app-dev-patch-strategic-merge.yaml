@@ -13,7 +13,7 @@ spec:
     path: doctors-directory-app/overlays/dev-patch-strategic-merge
   destination:
     server: https://kubernetes.default.svc
-    namespace: ''
+    namespace: dev-doctors-directory-patch-strategic-merge
   syncPolicy:
     automated:
       prune: true
