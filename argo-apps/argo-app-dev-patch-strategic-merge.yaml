@@ -12,7 +12,7 @@ spec:
       recurse: false
     repoURL: https://github.com/TluwaniMS/kustomize-practice-project.git
     targetRevision: master
-    path: dev-patch-strategic-merge
+    path: doctors-directory-app
   destination:
     server: https://kubernetes.default.svc
     namespace: dev-doctors-directory-patch-strategic-merge
