@@ -34,13 +34,32 @@ The kustomization file represents a YAML specification for a Kubernetes Resource
 kustomize build overlays/dev-patches
 ```
 
+###### To apply the app manifests:
+
+```
+kustomize build overlays/dev-patches | kubectl apply -f -
+```
+
 ###### building from `overlays/dev-patch-strategic-merge`
 
 ```
 kustomize build overlays/dev-patch-strategic-merge
 ```
+
+###### To apply the app manifests:
+
+```
+kustomize build overlays/dev-patch-strategic-merge | kubectl apply -f -
+```
+
 ###### building from `overlays/dev-patch-json-6902`
 
 ```
 kustomize build overlays/dev-patch-json-6902
+```
+
+###### To apply the app manifests:
+
+```
+kustomize build overlays/dev-patch-json-6902 | kubectl apply -f -
 ```
