@@ -8,7 +8,7 @@ namePrefix: dev-
 
 nameSuffix: -patch-json-6902
 
-commonLabels:
+labels:
   layer: patch-json-6902
 
 replicas:

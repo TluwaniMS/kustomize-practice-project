@@ -8,7 +8,7 @@ namePrefix: dev-
 
 nameSuffix: -patches
 
-commonLabels:
+labels:
   layer: patches
 
 patches:
