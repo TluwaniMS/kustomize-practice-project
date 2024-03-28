@@ -8,7 +8,7 @@ namePrefix: dev-
 
 nameSuffix: -patch-strategic-merge
 
-labels:
+commonLabels:
   layer: patch-strategic-merge
 
 patchesStrategicMerge:
