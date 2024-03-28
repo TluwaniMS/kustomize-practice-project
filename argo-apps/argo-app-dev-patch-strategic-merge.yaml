@@ -8,6 +8,8 @@ metadata:
 spec:
   project: default
   source:
+    directory:
+      recurse: false
     repoURL: https://github.com/TluwaniMS/kustomize-practice-project.git
     targetRevision: master
     path: doctors-directory-app/overlays/dev-patch-strategic-merge
