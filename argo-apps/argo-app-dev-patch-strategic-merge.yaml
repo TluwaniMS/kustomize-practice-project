@@ -10,7 +10,7 @@ spec:
   source:
     repoURL: https://github.com/TluwaniMS/kustomize-practice-project.git
     targetRevision: master
-    path: doctors-directory-app/overlays/dev-patch-strategic-merge
+    path: doctors-directory-app/overlays/dev-patch-strategic-merge/
   destination:
     server: https://kubernetes.default.svc
     namespace: dev-doctors-directory-patch-strategic-merge
