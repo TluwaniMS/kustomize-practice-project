@@ -10,7 +10,7 @@ spec:
   source:
     repoURL: https://github.com/TluwaniMS/kustomize-practice-project.git
     targetRevision: master
-    path: doctors-directory-app/overlays/dev-patch-json-6902/
+    path: doctors-directory-app/overlays/dev-patch-json-6902
   destination:
     server: https://kubernetes.default.svc
     namespace: dev-doctors-directory-patch-json-6902
