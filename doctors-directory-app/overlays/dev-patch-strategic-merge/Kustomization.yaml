@@ -8,21 +8,22 @@ namePrefix: dev-
 
 nameSuffix: -patch-strategic-merge
 
-commonLabels:
-  layer: patch-strategic-merge
-
-patchesStrategicMerge:
-  - ./patches/patches-strategic-merge-patch.yaml
-  - |-
-    apiVersion: apps/v1
-    kind: Deployment
-    metadata:
-      name: doctors-directory-client-deployment
-      namespace: doctors-directory
-      labels:
-        addedThrough: patches-strategic-merge-inline
-    spec:
-      replicas: 5
-      selector:
-        matchLabels:
-          app: doctors-directory-client
+labels:
+  - includeSelectors: true
+    pairs:
+      layer: patch-strategic-merge
+patches:
+  - path: ./patches/patches-strategic-merge-patch.yaml
+  - patch: |-
+      apiVersion: apps/v1
+      kind: Deployment
+      metadata:
+        name: doctors-directory-client-deployment
+        namespace: doctors-directory
+        labels:
+          addedThrough: patches-strategic-merge-inline
+      spec:
+        replicas: 5
+        selector:
+          matchLabels:
+            app: doctors-directory-client

@@ -2,24 +2,25 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 
 resources:
-  - ../../base/
+- ../../base/
 
 namePrefix: dev-
 
 nameSuffix: -patches
 
-commonLabels:
-  layer: patches
-
 patches:
-  - path: ./patches/patches-patch.yaml
-    target:
-      kind: Deployment
-      name: doctors-directory-server-deployment
-  - patch: |-
-      - op: replace
-        path: /spec/replicas
-        value: 8
-    target:
-      kind: Deployment
-      name: doctors-directory-client-deployment
+- path: ./patches/patches-patch.yaml
+  target:
+    kind: Deployment
+    name: doctors-directory-server-deployment
+- patch: |-
+    - op: replace
+      path: /spec/replicas
+      value: 8
+  target:
+    kind: Deployment
+    name: doctors-directory-client-deployment
+labels:
+- includeSelectors: true
+  pairs:
+    layer: patches
